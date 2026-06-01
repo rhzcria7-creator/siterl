@@ -250,7 +250,7 @@ function Logo({ size = "md", withText = true, glow = false }: { size?: "sm" | "m
     <div className="flex flex-col items-center relative select-none">
       {glow && <div className="absolute -z-10 w-[140%] h-[140%] rounded-full bg-gold-400/25 logo-glow blur-[100px]" aria-hidden="true" />}
       <img
-        src="/logo-icon.svg"
+        src="/logo-icon.png"
         width={s.w}
         height={s.h}
         alt="Do Zero ao Milhão"
