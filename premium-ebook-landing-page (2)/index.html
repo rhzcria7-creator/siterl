@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+
+    <!-- =========================================================== -->
+    <!-- SECURITY HEADERS (protection against XSS, clickjacking,     -->
+    <!-- MIME sniffing, data leakage, etc.)                          -->
+    <!-- =========================================================== -->
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://pay.cakto.com.br;
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' https://pay.cakto.com.br;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+      img-src 'self' data: blob:;
+      font-src 'self' https://fonts.gstatic.com data:;
+      connect-src 'self' https://pay.cakto.com.br;
+      frame-src https://pay.cakto.com.br;
+      frame-ancestors 'none';
+      base-uri 'self';
+      form-action 'self' https://pay.cakto.com.br;
+      worker-src 'self' blob:;
+      child-src 'self' blob:;
+      upgrade-insecure-requests;
+      block-all-mixed-content;
+    " />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(self), browsing-topics=()" />
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin" />
+    <meta http-equiv="Cross-Origin-Resource-Policy" content="same-origin" />
+    <meta http-equiv="Strict-Transport-Security" content="max-age=63072000; includeSubDomains; preload" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta http-equiv="Feature-Policy" content="payment 'self'; geolocation 'none'; camera 'none'; microphone 'none'" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <title>Do Zero ao Milhão | 7 Ebooks de Educação Financeira a partir de R$ 9,90</title>
+    <meta name="description" content="Aprenda a construir patrimônio com 7 ebooks práticos em PDF. Comece pela base por R$ 9,90 ou leve a coleção completa por R$ 39. Mentalidade, finanças, renda e investimentos — direto ao ponto." />
+    <meta name="keywords" content="ebook educação financeira, como construir patrimônio, independência financeira, mentalidade de milionário, do zero ao milhão, ebooks de finanças, educação financeira para iniciantes, múltiplas fontes de renda, investimentos para iniciantes" />
+    <meta name="author" content="Do Zero ao Milhão" />
+    <meta name="publisher" content="Do Zero ao Milhão" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="rating" content="general" />
+    <meta name="geo.region" content="BR" />
+    <meta name="geo.placename" content="Brasil" />
+    <meta name="language" content="Portuguese" />
+    <meta http-equiv="content-language" content="pt-BR" />
+    <link rel="canonical" href="https://dozeroaomilhao.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="product" />
+    <meta property="og:site_name" content="Do Zero ao Milhão" />
+    <meta property="og:title" content="Do Zero ao Milhão | 7 Ebooks de Educação Financeira a partir de R$ 9,90" />
+    <meta property="og:description" content="7 ebooks práticos em PDF para construir patrimônio do zero. Comece pela base por R$ 9,90 ou leve a coleção completa por R$ 39." />
+    <meta property="og:image" content="/logo-og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Logo Do Zero ao Milhão — coleção de ebooks de educação financeira" />
+    <meta property="og:url" content="https://dozeroaomilhao.com/" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="product:price:amount" content="329.90" />
+    <meta property="product:price:currency" content="BRL" />
+    <meta property="product:availability" content="in stock" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Do Zero ao Milhão | 7 Ebooks de Educação Financeira" />
+    <meta name="twitter:description" content="Construa patrimônio do zero com 7 ebooks práticos em PDF. A partir de R$ 9,90." />
+    <meta name="twitter:image" content="/logo-og.png" />
+    <meta name="twitter:image:alt" content="Do Zero ao Milhão" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23000'/%3E%3Cpath d='M5 24L9 14L12 19L16 11L20 19L23 14L27 24L25 24L22 16L20 21L16 14L12 21L10 16L7 24Z' fill='%23fff'/%3E%3Cpath d='M5 25L11 10L13 13L9 22L17 7L19 10L11 25L9 21L5 27Z' fill='%23F5C542'/%3E%3Cpath d='M20 8L22 6L24 8L22 10Z' fill='%23F5C542'/%3E%3C/svg%3E" />
+
+    <!-- Schema: Organization -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Do Zero ao Milhão",
+        "url": "https://dozeroaomilhao.com/",
+        "logo": "https://dozeroaomilhao.com/logo-og.png",
+        "description": "Coleção de ebooks de educação financeira que ensinam, de forma prática e direta, como construir patrimônio do zero.",
+        "sameAs": []
+      }
+    </script>
+
+    <!-- Schema: WebSite -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Do Zero ao Milhão",
+        "url": "https://dozeroaomilhao.com/",
+        "inLanguage": "pt-BR"
+      }
+    </script>
+
+    <!-- Schema: ProductGroup + 7 Ebooks (ItemList) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Coleção Do Zero ao Milhão — 7 Ebooks de Educação Financeira",
+        "description": "Sete ebooks em PDF vendidos separadamente, com cerca de 10 páginas cada. Comece pelo Ebook 01 (a base que resume tudo) e avance no seu ritmo.",
+        "numberOfItems": 7,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Book",
+              "name": "Ebook 01 — Mentalidade de Milionário",
+              "description": "O ebook base. Um resumo essencial de toda a jornada que revela o que a maioria dos materiais não ensina sobre como pensa quem constrói riqueza.",
+              "bookFormat": "https://schema.org/EBook",
+              "inLanguage": "pt-BR",
+              "numberOfPages": 10,
+              "offers": { "@type": "Offer", "price": "39.90", "priceCurrency": "BRL", "availability": "https://schema.org/InStock" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Book",
+              "name": "Ebook 02 — Fundamentos Financeiros",
+              "description": "Os princípios eternos que sustentam toda grande fortuna, explicados de forma direta e aplicável.",
+              "bookFormat": "https://schema.org/EBook",
+              "inLanguage": "pt-BR",
+              "numberOfPages": 10,
+              "offers": { "@type": "Offer", "price": "42.90", "priceCurrency": "BRL", "availability": "https://schema.org/InStock" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Book",
+              "name": "Ebook 03 — Organização do Dinheiro",
+              "description": "O sistema simples para organizar receitas, gastos e poupança de verdade.",
+              "bookFormat": "https://schema.org/EBook",
+              "inLanguage": "pt-BR",
+              "numberOfPages": 10,
+              "offers": { "@type": "Offer", "price": "54.90", "priceCurrency": "BRL", "availability": "https://schema.org/InStock" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "Book",
+              "name": "Ebook 04 — Múltiplas Fontes de Renda",
+              "description": "Estratégias práticas para gerar, multiplicar e proteger diferentes entradas de dinheiro.",
+              "bookFormat": "https://schema.org/EBook",
+              "inLanguage": "pt-BR",
+              "numberOfPages": 10,
+              "offers": { "@type": "Offer", "price": "47.90", "priceCurrency": "BRL", "availability": "https://schema.org/InStock" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "Book",
+              "name": "Ebook 05 — Investimentos Inteligentes",
+              "description": "Como fazer o dinheiro trabalhar para você com estratégia, paciência e critério.",
+              "bookFormat": "https://schema.org/EBook",
+              "inLanguage": "pt-BR",
+              "numberOfPages": 10,
+              "offers": { "@type": "Offer", "price": "56.90", "priceCurrency": "BRL", "availability": "https://schema.org/InStock" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "Book",
+              "name": "Ebook 06 — Negócios e Escala",
+              "description": "Como transformar um bom resultado em algo exponencial sem perder o controle.",
+              "bookFormat": "https://schema.org/EBook",
+              "inLanguage": "pt-BR",
+              "numberOfPages": 10,
+              "offers": { "@type": "Offer", "price": "66.90", "priceCurrency": "BRL", "availability": "https://schema.org/InStock" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@type": "Book",
+              "name": "Ebook 07 — Legado e Liberdade",
+              "description": "A arquitetura financeira que protege e multiplica patrimônio por décadas.",
+              "bookFormat": "https://schema.org/EBook",
+              "inLanguage": "pt-BR",
+              "numberOfPages": 10,
+              "offers": { "@type": "Offer", "price": "76.90", "priceCurrency": "BRL", "availability": "https://schema.org/InStock" }
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- Schema: Coleção Completa (Product / Offer) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Do Zero ao Milhão — Coleção Completa (7 Ebooks)",
+        "description": "Coleção completa com os 7 ebooks de educação financeira em PDF, cerca de 70 páginas no total, mais a Planilha de Patrimônio como bônus.",
+        "image": "https://dozeroaomilhao.com/logo-og.png",
+        "brand": { "@type": "Brand", "name": "Do Zero ao Milhão" },
+        "offers": {
+          "@type": "Offer",
+          "price": "329.90",
+          "priceCurrency": "BRL",
+          "availability": "https://schema.org/InStock",
+          "url": "https://dozeroaomilhao.com/#oferta",
+          "priceValidUntil": "2026-12-31"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "3200",
+          "bestRating": "5"
+        }
+      }
+    </script>
+
+    <!-- Schema: FAQPage (GEO + Rich Results) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Posso comprar apenas um ebook?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Os 7 ebooks são vendidos separadamente, cada um com seu próprio desconto (de 8% a 20%). O Ebook 01 — Mentalidade de Milionário (a base) sai por R$ 39,90 com 20% de desconto sobre R$ 49,90. Os demais títulos variam de R$ 42,90 a R$ 76,90, sempre com preço original riscado." } },
+          { "@type": "Question", "name": "Qual ebook devo ler primeiro?", "acceptedAnswer": { "@type": "Answer", "text": "Recomendamos começar pelo Ebook 01 — Mentalidade de Milionário. Ele é o resumo essencial de tudo e revela fundamentos que a maioria dos materiais não ensina." } },
+          { "@type": "Question", "name": "Vale mais a pena comprar a coleção completa?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, se você quer a jornada inteira. O preço original da coleção é R$ 568,80, mas oferecemos por R$ 329,90 à vista no Pix (ou 10x de R$ 39,99), uma economia real de R$ 238,90 (42% OFF). Mais barato que a soma dos avulsos, mesmo com descontos individuais, e inclui a Planilha de Patrimônio como bônus." } },
+          { "@type": "Question", "name": "Em qual formato recebo o material?", "acceptedAnswer": { "@type": "Answer", "text": "Todos os ebooks são entregues em PDF, com acesso e download imediatos. Cada ebook tem cerca de 10 páginas, totalizando aproximadamente 70 páginas na coleção completa." } },
+          { "@type": "Question", "name": "Existe garantia?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Você tem 7 dias de garantia incondicional. Se o conteúdo não fizer sentido, devolvemos 100% do valor investido, sem perguntas." } },
+          { "@type": "Question", "name": "Preciso de conhecimento prévio em finanças?", "acceptedAnswer": { "@type": "Answer", "text": "Não. Os ebooks foram escritos para serem acessíveis mesmo a quem nunca estudou finanças, com cada conceito explicado do zero." } },
+          { "@type": "Question", "name": "Quais formas de pagamento são aceitas?", "acceptedAnswer": { "@type": "Answer", "text": "Aceitamos Pix, cartão de crédito (com parcelamento) e boleto, com processamento 100% seguro por plataforma certificada." } }
+        ]
+      }
+    </script>
+
+    <!-- Schema: BreadcrumbList -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://dozeroaomilhao.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Os 7 Ebooks", "item": "https://dozeroaomilhao.com/#dentro" },
+          { "@type": "ListItem", "position": 3, "name": "Oferta", "item": "https://dozeroaomilhao.com/#oferta" }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- GEO/SEO: resumo factual para motores generativos e leitores assistivos -->
+    <noscript>
+      <h1>Do Zero ao Milhão — 7 Ebooks de Educação Financeira</h1>
+      <p>Coleção de 7 ebooks em PDF (cerca de 10 páginas cada, 70 no total) que ensinam como construir patrimônio do zero. Vendidos separadamente: Ebook 01 (Mentalidade de Milionário) por R$ 9,90 e os demais por R$ 12,90. Coleção completa por R$ 39. Garantia de 7 dias. Pagamento via Pix, cartão e boleto.</p>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
