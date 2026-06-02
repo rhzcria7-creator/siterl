@@ -249,65 +249,14 @@ function Logo({ size = "md", withText = true, glow = false }: { size?: "sm" | "m
   return (
     <div className="flex flex-col items-center relative select-none">
       {glow && <div className="absolute -z-10 w-[140%] h-[140%] rounded-full bg-gold-400/25 logo-glow blur-[100px]" aria-hidden="true" />}
-      <svg
+      <img
+        src="/logo-icon.png"
         width={s.w}
         height={s.h}
-        viewBox="0 0 200 200"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-label="Do Zero ao Milhão"
-        role="img"
+        alt="Do Zero ao Milhão"
         className={`logo-float ${size === "xl" || size === "lg" ? "drop-shadow-[0_20px_50px_rgba(245,197,66,0.25)]" : ""}`}
-        shapeRendering="geometricPrecision"
-      >
-        <defs>
-          <linearGradient id="goldGradMain" x1="0%" y1="100%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#B8892A" />
-            <stop offset="45%" stopColor="#F5C542" />
-            <stop offset="100%" stopColor="#FFE9A8" />
-          </linearGradient>
-          <linearGradient id="goldGradLine" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#B8892A" />
-            <stop offset="50%" stopColor="#F5C542" />
-            <stop offset="100%" stopColor="#FFE9A8" />
-          </linearGradient>
-        </defs>
-
-        {/* Shape "1" M white — letterform iconográfica (base branca sólida) */}
-        <path
-          d="M 20 165 L 42 80 L 58 80 L 66 150 L 82 150 L 92 58 L 114 58 L 128 150 L 140 150 L 148 78 L 166 78 L 182 165 L 162 165 L 150 112 L 140 150 L 128 150 L 114 70 L 92 70 L 82 150 L 70 150 L 58 115 L 50 150 L 36 165 Z"
-          fill="#FFFFFF"
-          stroke="rgba(255,255,255,0.08)"
-          strokeWidth="1"
-        />
-
-        {/* Barra vertical ESQUERDA (pequena) — dourada */}
-        <rect x="40" y="66" width="16" height="98" rx="3" fill="url(#goldGradMain)" />
-        {/* Barra vertical CENTRAL (alta) — dourada */}
-        <rect x="94" y="22" width="18" height="142" rx="3" fill="url(#goldGradMain)" />
-        {/* Barra vertical DIREITA (média) — dourada */}
-        <rect x="146" y="54" width="16" height="110" rx="3" fill="url(#goldGradMain)" />
-
-        {/* Linha de tendência em zig-zag (subindo pela frente das barras) */}
-        <path
-          d="M 40 136 L 56 136 L 56 118 L 92 118 L 92 92 L 126 92 L 126 68 L 146 68 L 146 56 L 172 56"
-          stroke="url(#goldGradLine)"
-          strokeWidth="7"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          fill="none"
-        />
-        {/* Cabeça da seta no topo da linha de tendência */}
-        <path d="M 172 34 L 188 56 L 172 78 L 156 56 Z" fill="url(#goldGradMain)" />
-
-        {/* Tiques finos nas barras (estilo gráfico) */}
-        <g stroke="rgba(255,255,255,0.12)" strokeWidth="2">
-          <line x1="40" y1="100" x2="56" y2="100" />
-          <line x1="94" y1="70" x2="112" y2="70" />
-          <line x1="94" y1="112" x2="112" y2="112" />
-          <line x1="146" y1="96" x2="162" y2="96" />
-        </g>
-      </svg>
+        style={{ width: s.w, height: s.h }}
+      />
       {withText && (
         <div className={`mt-5 font-bold tracking-[0.25em] text-center ${s.text} whitespace-nowrap`}>
           <span className="text-gold-400">DO ZERO</span>
